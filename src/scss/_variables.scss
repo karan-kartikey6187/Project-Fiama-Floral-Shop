@@ -1,0 +1,110 @@
+$primary: #E55472;
+$secondary:  #9AC45C;
+$white: #fff;
+$light: #666666;
+
+// FONTS
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-family-monospace: "Montserrat", sans-serif;
+
+$font-weight-base: 600;
+$line-height-base: 1.2;
+
+
+// HEADING
+
+$headings-font-family: "Montserrat", sans-serif;
+$headings-line-height: 1.2;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 4.5;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 1.5625;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base;
+
+// Font Size
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+);
+
+// Display Font Size
+
+$display-font-sizes: (
+  1: 1.5625rem,
+  2: 1.25rem,
+  3: 1.125rem,
+  4: 1rem,
+  5: 0.875rem,
+  6: 0.75rem
+);
+
+// SPACERS 
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .625,
+  2: $spacer * 0.9375,
+  3: $spacer * 1.25,
+  4: $spacer * 1.5625,
+  5: $spacer * 1.875,
+  6: $spacer * 2.5,
+  7: $spacer * 6.25,
+  8: $spacer * 9.375,
+  
+);
+
+
+// Border
+
+$border-width: 1px;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 12px
+);
+
+
+// Form & Input
+
+$form-select-focus-border-color: $white;
+$form-select-focus-box-shadow:  none;    
+$form-select-border-color: #ccc;  
+$form-select-border-radius: 0px;
+$form-select-focus-border-color: #ccc;
+$input-focus-border-color: transparent;
+$input-focus-box-shadow: none;
+$input-focus-border-color: #ced4da;
+
+
+// Accorrdion
+
+$accordion-button-icon: url(../assets/icons/plus.svg);
+$accordion-button-active-icon: url(../assets/icons/dash.svg);
+$accordion-button-color: $light;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $light;
+$accordion-button-focus-border-color: transparent;
+$accordion-button-focus-box-shadow: none;
+
+// Navbar
+
+$navbar-toggler-focus-width: 0px;
+
+
+// Breadcrumb
+
+$breadcrumb-divider: url("../assets/icons/breadcrumb-divider.svg");
+

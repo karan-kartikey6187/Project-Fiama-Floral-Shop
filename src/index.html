@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fiama Floral Shop</title>
+    <meta
+      name="description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta name="keywords"
+      content="Fiama Floral Shop, Fresh Flower, Shop Your Flower, Natural & Beautiful Flower Here, Premium Flowers"/>
+    <meta name="robots" content="noindex nofollow" />
+    <meta property="og:title" content="Fiama Floral Shop" />
+    <meta property="og:description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fiama Floral Shop" />
+    <meta
+      name="twitter:description"
+      content="Fiama Floral Shop provides fresh flowers"/>
+    <meta name="twitter:image" content="" />
+    <link rel="icon" href="./assets/icons/fevicon.ico" type="image/ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="home-header pb-4 border-bottom">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-transparent mt-6">
+            <div class="container-fluid flex-column flex-sm-row">
+              <a class="navbar-brand" href="#"><img src="./assets/logos/fiama-logo.webp" alt="Brand Logo"/></a>
+              <div class="d-flex align-items-center order-lg-3 mt-3 mt-sm-0">
+                <div type="button" class="position-relative d-flex align-items-center me-3">
+                  <a href="./wishlist.html" class="stretched-link"><img src="./assets/icons/heart.svg" alt="Cart" class="icon-20px"/></a>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">4</span>
+                </div>
+                <div type="button" class="position-relative d-flex align-items-center">
+                  <a href="./cart.html" class="stretched-link"><img src="./assets/icons/cart.svg" alt="Cart" class="icon-20px"/></a>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">2</span>
+                </div>
+                <div class="d-flex flex-column ms-3 position-relative">
+                  <a href="./cart.html" class="mb-0 fs-13 fw-medium text-light-grey text-decoration-none stretched-link">YOUR CART</a>
+                  <p class="mb-0 fs-13 fw-medium text-primary" style="margin-top: 4px">$89.25</p>
+                </div>
+                <button class="navbar-toggler border-0 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="offcanvas-wrapper offcanvas offcanvas-start px-3 " tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header px-0 mx-3 border-bottom mb-1 pb-4">
+                  <h5 class="offcanvas-title"><a class="navbar-brand" href="#"><img src="./assets/logos/fiama-logo.webp" alt="Brand Logo"/></a></h5>
+                  <button type="button" class="btn-close ms-auto  mt-1" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body justify-content-center px-3 pb-6 pb-lg-0">
+                  <div class="d-flex gap-4 justify-content-center px-0 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center d-none d-lg-flex">
+                      <img src="./assets/icons/telephone.svg" alt="Phone" class="icon-20px me-3"/>
+                      <div>
+                        <p class="mb-0 text-light-grey fs-13 fw-medium mb-4px">PHONE</p>
+                        <p class="mb-0"><a href="tel:0123456789" class="text-decoration-none text-black fs-13 fw-normal nav-link">+0123-456-789</a></p>
+                      </div>
+                    </div>
+                    <div class="search-bar p-1 border border-1 d-none d-lg-flex d-flex align-items-center rounded rounded-5">
+                      <form class="d-flex border-0 w-100" role="search">
+                        <input class="form-control me-2 border-0 fw-normal" type="search" placeholder="Search here..."/>
+                        <button class="border-0 bg-transparent" type="submit">
+                          <img src="./assets/icons/search.svg" alt="Search" />
+                        </button>
+                      </form>
+                    </div>
+                    <div class="search-bar-offcanvas p-1 d-lg-none d-flex align-items-center rounded rounded-1 bg-body-tertiary">
+                      <form class="d-flex border-0 w-100 justify-content-center" role="search">
+                        <input class="form-control me-2 border-0 bg-body-tertiary fw-normal" type="search" placeholder="Search here..."/>
+                        <button class="border-0 bg-transparent" type="submit">
+                          <img src="./assets/icons/search.svg" alt="Search" />
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="accordion d-lg-none  mt-3 pb-4 border-bottom" id="accordionExample">
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          HOME
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="index.html">Home Style - 01</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 02</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 03</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 04</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="d-block pe-3 py-2 text-decoration-none text-light-grey fw-normal nav-link">ABOUT US</a>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         SHOP
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                              <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Other Pages >></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          NEWS
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebar</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed fw-normal ps-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          PAGES
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ps-0">
+                          <ul class="d-flex flex-column gap-3 ps-1 pe-1">
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">About Us</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio - 02</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">FAQ</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Google Map Locations</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">404</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Contact</a></li>
+                            <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Coming Soon</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="d-block pe-3 py-2 text-decoration-none text-light-grey fw-normal nav-link">CONTACT</a>
+                  </div>
+                  <div class="pb-3 border-bottom mb-5 d-lg-none">
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/person.svg" class="icon-link" alt=""></div>
+                       <a href="#" class="mb-0 text-light-grey fw-normal stretched-link nav-link">My Account</a>
+                    </div>
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/heart.svg" class="icon-link" alt="">&thinsp;<sup class="text-light-grey fw-normal">3</sup></div>
+                       <a href="./wishlist.html" class="mb-0 text-light-grey fw-normal stretched-link nav-link">Wishlist</a>
+                    </div>
+                    <div class="icon-box d-flex align-items-center mt-2 position-relative">
+                      <div class="icon-50px border d-flex justify-content-center align-items-center me-1"><img src="./assets/icons/cart.svg" class="icon-link" alt="">&thinsp;<sup class="text-light-grey fw-normal">5</sup></div>
+                       <a href="./cart.html" class="mb-0 text-light-grey fw-normal stretched-link nav-link">Shoping Cart</a>
+                    </div>
+                  </div>
+                  <div class="d-flex d-lg-none gap-1">
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/facebook-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/twitter-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/pinterest-grey.svg" alt=""></div>
+                    <div class="icon-40px d-flex justify-content-center align-items-center bg-body-tertiary"><img src="./assets/icons/instagram-grey.svg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="custom-nav bg-white pt-4 position-relative d-none d-lg-block">
+          <div class="nav-wrapper container d-flex justify-content-center" id="nav-items">
+            <nav class="header-links">
+              <ul class="nav nav-underline d-flex gap-6 pb-2">
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" aria-current="page" href="#">HOME</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="index.html">Home Style - 01</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 02</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 03</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Home Style - 04</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">PAGES</a>
+                  <ul class="z-3 position-absolute bg-white start-10 top-100 border-danger border-top border-2 pt-4 ps-6 pe-5 pb-5 shadow d-flex gap-4 d-none">
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Inner Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">About Us</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio-2</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">FAQ</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Inner Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Google Map Locations</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">404</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Contact</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Coming Soon</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Shop Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                      </div>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="text-light-grey fw-medium ps-2 pe-7 py-2 bg-body-secondary">Blog Pages</div>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebars</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                      </div>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">SHOP</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="./shop.html">Shop</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Grid</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop Left sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop right sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Shop details</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Other Pages >></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">PORTFOLIO</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio - 02</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">Portfolio Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">NEWS</a>
+                  <ul class="z-3 d-flex flex-column gap-1 position-absolute bg-white start-25 top-100 border-danger border-top border-2 pt-4 ps-6 pe-7 pb-5 shadow d-none">
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Grid</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Left sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News Right sidebar</a></li>
+                      <li class="list-unstyled"><a class="text-decoration-none nav-link text-light-grey fw-normal" href="#">News details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link header-nav-links text-light-grey fw-medium" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </section>
+    </header>
+    <main>
+     <section class="hero-section">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+          <div class="carousel-indicators gap-1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded rounded-circle" aria-current="true" aria-label="Slide 1" style="height: 10px; width: 10px;"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded rounded-circle" style="height: 10px; width: 10px;"></button>
+          </div>
+          <div class="carousel-inner position-relative">
+            <div id="carousel-item-1" class="carousel-item active d-flex justify-content-start align-items-center">
+              <div class="container my-8">
+                <h1 class="fw-bold mb-3 opacity-0 text-grey-normal">Fresh Flower</h1>
+                <h2 class="underline-start fw-medium h3 text-light-grey mb-5 opacity-0">Natural & Beautiful Flower Here</h2>
+                <p class="mb-0 mt-6 fw-lighter opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quibusdam earum tempora consequuntur.</br>
+                <button class="shop-now-btn btn btn-primary rounded rounded-pill px-4 py-1 mt-4 opacity-0 position-relative"><a href="./shop.html" class="text-white text-decoration-none stretched-link">Shop Now</a></button>
+              </div>
+            </div>
+            <div id="carousel-item-2" class="carousel-item d-flex justify-content-start align-items-center">
+              <div class="container my-8">
+                <h1 class="fw-bold mb-3 opacity-0 text-grey-normal">Fresh Flower</h1>
+                <h2 class="underline-start fw-medium h3 text-light-grey mb-5 opacity-0">Natural & Beautiful Flower Here</h2>
+                <p class="mb-0 mt-6 fw-lighter opacity-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Quibusdam earum tempora consequuntur.</br>
+                <button class="shop-now-btn btn btn-primary rounded rounded-pill px-4 py-1 mt-4 opacity-0 position-relative"><a href="./shop.html" class="text-white text-decoration-none stretched-link">Shop Now</a></button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev-btn carousel-control-btn position-absolute bg-transparent p-1 d-none d-xl-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-prev-icon carousel-icon" aria-hidden="true"><img src="./assets/icons/angle-left-solid-full.svg" alt=""></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next-btn carousel-control-btn position-absolute bg-transparent p-1 d-none d-xl-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-next-icon carousel-icon" aria-hidden="true"><img src="./assets/icons/angle-right-solid-full.svg" alt=""></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+     </section> 
+     <section class="service-section">
+        <div class="container position-relative">
+         <div class="serivce-cards-wrapper d-flex gap-3 bg-light-grey justify-content-center justify-content-xl-evenly flex-wrap mb-6 mt-7 my-xl-0 w-100 z-3">
+            <div class="serivce-card d-flex gap-2 py-6 px-2 col-12 col-md-5 col-lg-3 col-xl justify-content-center">
+              <img src="./assets/icons/trolley.svg" alt="" class="icon-50px">
+              <div class="d-flex flex-column justify-content-evenly">
+                <h2 class="fw-normal text-light-grey display-4">Free shipping</h2>
+                <p class="fw-light text-light-grey display-5 mb-0">On all orders over $49.00</p>
+              </div>
+            </div>
+            <div class="serivce-card d-flex gap-2 py-6 px-2 col-12 col-md-5 col-lg-3 col-xl justify-content-center">
+              <img src="./assets/icons/money.svg" alt="" class="icon-50px">
+              <div class="d-flex flex-column justify-content-evenly">
+                <h2 class="fw-normal text-light-grey display-4">15 days returns</h2>
+                <p class="fw-light text-light-grey display-5 mb-0">Moneyback guarantee</p>
+              </div>
+            </div>
+            <div class="serivce-card d-flex gap-2 py-6 px-2 col-12 col-md-5 col-lg-3 col-xl justify-content-center">
+              <img src="./assets/icons/credit-card.svg" alt="" class="icon-50px">
+              <div class="d-flex flex-column justify-content-evenly">
+                <h2 class="fw-normal text-light-grey display-4">Secure checkout</h2>
+                <p class="fw-light text-light-grey display-5 mb-0">Protected by Paypal</p>
+              </div>
+            </div>
+            <div class="serivce-card d-flex gap-2 py-6 px-2 col-12 col-md-5 col-lg-5 col-xl justify-content-center">
+              <img src="./assets/icons/gift-card.svg" alt="" class="icon-50px">
+              <div class="d-flex flex-column justify-content-evenly">
+                <h2 class="fw-normal text-light-grey display-4">Offer & gift here</h2>
+                <p class="fw-light text-light-grey display-5 mb-0">On all orders over</p>
+              </div>
+            </div>
+         </div>
+        </div>
+     </section>
+     <section class="flower-day-offer-section">
+       <div class="container">
+        <div class="flower-day-cards-wrapper d-flex flex-wrap justify-content-center gap-6 mt-7 mb-7 mt-xl-8">
+          <div class="flower-day-card overflow-hidden  col-md-5 col-lg position-relative">
+            <a href="./shop.html" class="stretched-link">
+              <img src="./assets/images/flower-day-card-img-1.webp" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="flower-day-card overflow-hidden col-md-5 col-lg position-relative">
+            <a href="./shop.html" class="stretched-link">
+              <img src="./assets/images/flower-day-card-img-2.webp" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="flower-day-card overflow-hidden col-md-5 col-lg position-relative">
+            <a href="./shop.html" class="stretched-link">
+              <img src="./assets/images/flower-day-card-img-3.webp" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+       </div>
+     </section>
+     <section class="new-arrival-section">
+       <div class="container">
+          <h2 class="fw-bolder text-center pb-1 mb-2 position-relative">new <span class="underline-start"> arrival</span> items</h2>
+          <div class="new-arrival-cards-wrapper row g-4 justify-content-center mt-4  mb-6 mt-lg-4 mb-lg-7">
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">10%</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn rounded-0 btn-outline-light py-2 text-white" onclick="this.blur()">Add To Cart</button>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="./product-details.html"><img src="./assets/images/new-arrival-card-img-1.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="./product-details.html" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Pink Flower Tree</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$18.00 <del class="display-6 fw-semibold"> $21.00</del></p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-2.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Premium Joyful</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$18.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">12%</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-3.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">The White Rose</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$16.00 <del class="display-6 fw-semibold"> $19.00</del></p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-4.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Red Rose Bouquet</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-5.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Heart's Desire</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$15.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">15%</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-6.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Assorted Roses</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$17.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-7.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Roses Surprise</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$12.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="new-arrival-card position-relative col-6 col-md-4 col-lg-3">
+              <div class="card border-0 rounded-0 position-relative">
+                <div class="card-image position-relative overflow-hidden">
+                  <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">12%</div>
+                  <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                    <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                  </div>
+                  <a href="#"><img src="./assets/images/new-arrival-card-img-8.webp" class="card-img-top" alt=""></a>
+                </div>
+                <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                  <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Tropical Peace Lily</a>
+                  <p class="card-text mb-0 text-light-grey fw-semibold">$14.00 <del class="display-6 fw-semibold"> $25.00</del></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+     <section class="flower-deal-offer-section">
+       <div class="container">
+        <div class="flower-deal-cards-wrapper d-flex flex-wrap justify-content-center gap-6 mt-2 mb-7 mt-7">
+          <div class="flower-deal-card overflow-hidden  col-md-5 col-lg position-relative">
+            <a href="./shop.html" class="stretched-link">
+              <img src="./assets/images/flower-deal-card-img-1.webp" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="flower-deal-card overflow-hidden col-md-5 col-lg position-relative">
+            <a href="./shop.html" class="stretched-link">
+              <img src="./assets/images/flower-deal-card-img-2.webp" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+       </div>
+     </section>
+     <section class="top-products-section">
+      <div class="container">
+          <h2 class="fw-bolder text-center pb-1 mb-4 position-relative">top <span class="underline-start">products</span></h2>
+          <div class="swiper topProductsSwiper mt-6 pb-6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">10%</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-1.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Pink Flower Tree</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$18.00 <del class="display-6 fw-semibold"> $21.00</del></p>
+                    </div>
+                </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-2.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Premium Joyful</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$18.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">12%</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-3.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">The White Rose</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$16.00 <del class="display-6 fw-semibold"> $19.00</del></p>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-4.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Red Rose Bouquet</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$20.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-5.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Heart's Desire</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$15.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-secondary position-absolute fw-bold" style="top: 18px;">15%</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-6.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Assorted Roses</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$17.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">Hot</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-7.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Roses Surprise</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new-arrival-card position-relative">
+                  <div class="card border-0 rounded-0 position-relative">
+                    <div class="card-image position-relative overflow-hidden">
+                      <div class="badge px-3 py-1 rounded-0 bg-primary position-absolute fw-bold" style="top: 18px;">12%</div>
+                      <div class="card-options btn-group position-absolute bg-light-grey-800 w-100 bottom-0 rounded-0">
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/heart-white.svg" alt=""></a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2 text-white">Add To Cart</a>
+                        <a href="#" class="btn rounded-0 btn-outline-light py-2"><img src="./assets/icons/eye-white.svg" alt=""></a>
+                      </div>
+                      <a href="#"><img src="./assets/images/new-arrival-card-img-8.webp" class="card-img-top" alt=""></a>
+                    </div>
+                    <div class="card-body bg-white d-flex flex-column align-items-center position-relative">
+                      <a href="#" class="card-text d-inline-block stretched-link text-decoration-none display-5 text-dark fw-normal text-uppercase nav-link" style="margin-bottom: 10px;">Tropical Peace Lily</a>
+                      <p class="card-text mb-0 text-light-grey fw-semibold">$14.00 <del class="display-6 fw-semibold"> $25.00</del></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-topProducts mx-auto d-md-none bottom-0"></div>
+            <div class="swiper-btn topProductsPrev position-absolute start-0 top-50 z-3 rounded rounded-circle bg-white p-1 d-none d-md-block"><img src="./assets/icons/angle-left-solid-full.svg" class="icon-30px" alt=""></div>
+            <div class="swiper-btn topProductsNext position-absolute end-0 top-50 z-3 rounded rounded-circle bg-white p-1 d-none d-md-block"><img src="./assets/icons/angle-right-solid-full.svg" class="icon-30px" alt=""></div>
+          </div>
+      </div>
+     </section>
+     <section class="best-offer-banner-section">
+      <div class="container">
+        <div class="best-offer-cards-wrapper d-flex flex-wrap justify-content-center gap-6 mt-7 mt-md-6 mb-7 position-relative">
+          <div class="best-offer-card overflow-hidden col">
+            <a href="./shop.html" class="stretched-link"><img src="./assets/images/best-offer-banner-img.webp" alt="" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section class="latest-news-section">
+      <div class="container">
+          <h2 class="fw-bolder text-center pb-1 mb-4 position-relative"><span class="underline-start">latest news</span></h2>
+          <div class="swiper latestNewsSwiper mt-6 pb-70px pb-lg-5 mb-7">
+            <div class="swiper-wrapper mt-3">
+              <div class="swiper-slide">
+                <div class="card border-0 rounded-0 position-relative">
+                  <div class="card-image position-relative">
+                    <a href="#"><img src="./assets/images/latest-news-img-1.webp" class="card-img-top" alt=""></a>
+                  </div>
+                  <div class="card-body bg-white d-flex flex-column align-items-start py-3 px-0">
+                    <div class="d-flex gap-4 mb-3">
+                      <h3 class="display-5 fw-medium text-light-grey mb-0">Nov 18, 2020</h3>
+                      <div class="icon-comment d-flex gap-1 align-items-center">
+                        <img src="./assets/icons/chat-left-text.svg" alt="" class="icon-link">
+                        <p class="display-5 mb-0 fw-medium text-light-grey">2</p>
+                      </div>
+                    </div>
+                    <p class="mb-0 latest-news-paragraph nav-link"><span class="underline-start display-1 fw-medium start-0">Lorem ipsum dolor sit amet con adipisicing elit sed</span></p>
+                  </div>
+                </div>
+                </div>
+              <div class="swiper-slide">
+                <div class="card border-0 rounded-0 position-relative">
+                  <div class="card-image position-relative">
+                    <a href="#"><img src="./assets/images/latest-news-img-2.webp" class="card-img-top" alt=""></a>
+                  </div>
+                  <div class="card-body bg-white d-flex flex-column align-items-start py-3 px-0">
+                    <div class="d-flex gap-4 mb-3">
+                      <h3 class="display-5 fw-medium text-light-grey mb-0">Nov 18, 2020</h3>
+                      <div class="icon-comment d-flex gap-1 align-items-center">
+                        <img src="./assets/icons/chat-left-text.svg" alt="" class="icon-link">
+                        <p class="display-5 mb-0 fw-medium text-light-grey">2</p>
+                      </div>
+                    </div>
+                    <p class="mb-0 latest-news-paragraph nav-link"><span class="underline-start display-1 fw-medium start-0">Lorem ipsum dolor sit amet con adipisicing elit sed</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 rounded-0 position-relative">
+                  <div class="card-image position-relative">
+                    <a href="#"><img src="./assets/images/latest-news-img-3.webp" class="card-img-top" alt=""></a>
+                  </div>
+                  <div class="card-body bg-white d-flex flex-column align-items-start py-3 px-0">
+                    <div class="d-flex gap-4 mb-3">
+                      <h3 class="display-5 fw-medium text-light-grey mb-0">Nov 18, 2020</h3>
+                      <div class="icon-comment d-flex gap-1 align-items-center">
+                        <img src="./assets/icons/chat-left-text.svg" alt="" class="icon-link">
+                        <p class="display-5 mb-0 fw-medium text-light-grey">2</p>
+                      </div>
+                    </div>
+                    <p class="mb-0 latest-news-paragraph nav-link"><span class="underline-start display-1 fw-medium start-0">Lorem ipsum dolor sit amet con adipisicing elit sed</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 rounded-0 position-relative">
+                  <div class="card-image position-relative">
+                    <a href="#"><img src="./assets/images/latest-news-img-4.webp" class="card-img-top" alt=""></a>
+                  </div>
+                  <div class="card-body bg-white d-flex flex-column align-items-start py-3 px-0">
+                    <div class="d-flex gap-4 mb-3">
+                      <h3 class="display-5 fw-medium text-light-grey mb-0">Nov 18, 2020</h3>
+                      <div class="icon-comment d-flex gap-1 align-items-center">
+                        <img src="./assets/icons/chat-left-text.svg" alt="" class="icon-link">
+                        <p class="display-5 mb-0 fw-medium text-light-grey">2</p>
+                      </div>
+                    </div>
+                    <p class="mb-0 latest-news-paragraph nav-link"><span class="underline-start display-1 fw-medium start-0">Lorem ipsum dolor sit amet con adipisicing elit sed</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 rounded-0 position-relative">
+                  <div class="card-image position-relative">
+                    <a href="#"><img src="./assets/images/latest-news-img-5.webp" class="card-img-top" alt=""></a>
+                  </div>
+                  <div class="card-body bg-white d-flex flex-column align-items-start py-3 px-0">
+                    <div class="d-flex gap-4 mb-3">
+                      <h3 class="display-5 fw-medium text-light-grey mb-0">Nov 18, 2020</h3>
+                      <div class="icon-comment d-flex gap-1 align-items-center">
+                        <img src="./assets/icons/chat-left-text.svg" alt="" class="icon-link">
+                        <p class="display-5 mb-0 fw-medium text-light-grey">2</p>
+                      </div>
+                    </div>
+                    <p class="mb-0 latest-news-paragraph nav-link"><span class="underline-start display-1 fw-medium start-0">Lorem ipsum dolor sit amet con adipisicing elit sed</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-latestNews bottom-0 d-lg-none"></div>
+            <div class="swiper-btn latestNewsPrev position-absolute start-0 top-50 z-3 rounded rounded-circle bg-white p-1 d-none d-lg-block"><img src="./assets/icons/angle-left-solid-full.svg" class="icon-30px" alt=""></div>
+            <div class="swiper-btn latestNewsNext position-absolute end-0 top-50 z-3 rounded rounded-circle bg-white p-1 d-none d-lg-block"><img src="./assets/icons/angle-right-solid-full.svg" class="icon-30px" alt=""></div>
+          </div> 
+      </div>
+     </section>
+    <section class="brand-partners-section bg-light-grey">
+      <div class="container">
+        <div class="brand-partners-wrapper d-flex justify-content-evenly justify-content-sm-between px-2 px-sm-0 py-4 py-lg-6">
+           <div class="brand-partner-img mx-5">
+            <img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid">
+          </div>
+           <div class="brand-partner-img mx-6">
+            <img src="./assets/images/brand-partners-img-2.webp" alt="" class="img-fluid">
+          </div>
+           <div class="brand-partner-img d-none d-sm-block">
+            <img src="./assets/images/brand-partners-img-3.webp" alt="" class="img-fluid">
+          </div>
+           <div class="brand-partner-img d-none d-md-block">
+            <img src="./assets/images/brand-partners-img-4.webp" alt="" class="img-fluid">
+          </div>
+           <div class="brand-partner-img mx-6 d-none d-lg-block">
+            <img src="./assets/images/brand-partners-img-5.webp" alt="" class="img-fluid">
+          </div>
+          <div class="brand-partner-img mx-5 d-none d-xl-block">
+            <img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer>
+     <section class="footer-top bg-light-dark pt-4 pt-md-5 pt-lg-6 pt-xl-7">
+      <div class="footer-top-container container pb-5 pb-lg-6 pb-xl-7">
+        <div class="footer-wrapper row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+          <div class="footer-links col-md-4 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+             <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">My Accoout</strong>
+             <nav class="d-flex flex-column gap-4 mt-2">
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">My account</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Checkout</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Contact us</a>
+                 <a href="./cart.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Shopping Cart</a>
+                 <a href="./wishlist.html" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Wishlist</a>
+             </nav>
+         </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+             <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Quick Links</strong>
+             <nav class="d-flex flex-column gap-4 mt-2">
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Store Location</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Orders Tracking</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Size Guide</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">My account</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">FAQs</a>
+             </nav>
+         </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+             <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Information</strong>
+             <nav class="d-flex flex-column gap-4 mt-2">
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Privacy Page</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">About us</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Careers</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Delivery Inforamtion</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Term & Conditions</a>
+             </nav>
+         </div>
+          <div class="footer-links col-md-4 col-lg-3 col-xl-2 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+             <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">Customer Service</strong>
+             <nav class="d-flex flex-column gap-4 mt-2">
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Shipping Policy</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Help & Contact Us</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Returns & Refunds</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Online Stores</a>
+                 <a href="#" class="text-light-grey-800 fs-14 text-decoration-none nav-link fw-normal footer-link-hover text-sm-start">Terms and Conditions</a>
+             </nav>
+         </div>
+          <div class="footer-links col-md-7 col-lg-7 col-xl-4 mt-6 mt-xxl-0 d-flex flex-column align-items-start ps-3 ps-sm-0">
+             <strong class="text-white fw-medium text-uppercase mb-4 pe-7 text-nowrap">About Our Shop</strong>
+             <nav class="d-flex flex-column gap-3 mt-2">
+                 <p class="text-light-grey-800 fs-14 text-decoration-none fw-normal text-sm-start text-wrap mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incididunt ut labore et dolore</p>
+                 <div class="d-flex align-items-center gap-1"><img src="./assets/icons/location-grey.svg" alt=""><address class="text-light-grey-800 fs-14 fw-normal text-sm-start mb-0">Brooklyn, New York, United States</address></div>
+                 <div class="d-flex align-items-center gap-1"><img src="./assets/icons/telephone-grey.svg" alt=""><a href="tel:+88015-88888-9999" class="text-light-grey-800 nav-link fw-normal text-decoration-none">+88015-88888-9999</a></div>
+                 <div class="d-flex align-items-center gap-1"><img src="./assets/icons/envelope-grey.svg" alt=""><a href="mailto: example@gmail.com" class="text-light-grey-800 nav-link fw-normal text-decoration-none">example@example.com</a></div>
+                 <img src="./assets/images/footer-payment-img.webp" alt="" style="width: 197px; height: 20px;">
+             </nav>
+         </div>
+        </div>
+      </div>
+     </section>
+     <section class="footer-bottom bg-light-dark">
+      <div class="container px-0">
+        <div class="d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-between py-2 gap-2 gap-md-0">
+          <p class="text-light-grey-800 mb-0 fs-13 fw-light">© 2026 - Just For You</p>
+          <div class="d-flex gap-3 ">
+            <img src="./assets/icons/facebook-grey.svg" alt="" class="icon-12px">
+            <img src="./assets/icons/twitter-grey.svg" alt="" class="icon-12px">
+            <img src="./assets/icons/pinterest-grey.svg" alt="" class="icon-12px">
+            <img src="./assets/icons/instagram-grey.svg" alt="" class="icon-12px">
+          </div>
+          <div class="d-none d-md-block"></div>
+        </div>
+      </div>
+     </section>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-focus="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var topProductsSwiper = new Swiper(".topProductsSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination-topProducts",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".topProductsNext",
+          prevEl: ".topProductsPrev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+  </script>
+    <script>
+      var latestNewsSwiper = new Swiper(".latestNewsSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination-latestNews",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".latestNewsNext",
+          prevEl: ".latestNewsPrev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+  </script>
+  </body>
+</html>
