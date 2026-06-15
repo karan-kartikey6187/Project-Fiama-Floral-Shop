@@ -6,6 +6,10 @@
     color: #666666;
 }
 
+.bg-light-grey-500 {
+    background-color: rgb(244, 247, 252);
+}
+
 .text-grey-normal {
     color: #434343;
 }
@@ -84,7 +88,7 @@
   width: 12px;
   cursor: pointer;
   &:hover{
-    filter: brightness(0) saturate(100%) invert(45%) sepia(79%) saturate(276%) hue-rotate(298deg) brightness(89%) contrast(161%);
+    filter: brightness(0) saturate(100%) invert(45%) sepia(79%) saturate(276%) hue-rotate(298deg) brightness(89%) contrast(161%) !important;
   }
 }
 
@@ -154,6 +158,7 @@
 }
 
 .nav-link {
+   cursor: pointer;
    &:hover{
       color: $primary !important;
    }
@@ -243,8 +248,8 @@
 }
 
 .shop-now-btn.btn-primary {
-    --bs-btn-hover-bg: #434343;
-    --bs-btn-hover-border-color: #434343;
+    --bs-btn-hover-bg: #434343 !important;
+    --bs-btn-hover-border-color: #434343 !important;
 }
 
 .carousel-item .container{
@@ -263,7 +268,6 @@
    overflow: hidden;
 }
 }
-
 .carousel-indicators [data-bs-target="#carouselExampleIndicators"].active {
     background-color: $primary;
 }
@@ -319,7 +323,7 @@
 }
 
 .card-options, .card-options-shop {
-    a.btn:hover{
+    a.btn:hover, button.btn:hover{
        background-color: $primary;
        transition: all .4s ease;
     }
@@ -353,7 +357,6 @@
     transition: 0.4s ease;
 }
 
-
 .swiper-btn{
    opacity: 0;
    transition: 0.5s ease;
@@ -365,10 +368,10 @@
    }
 }
 
-.topProductsPrev, .latestNewsPrev{
+.topProductsPrev, .latestNewsPrev, .relatedProductsPrev{
    transform: translateX(50px);
 }
-.topProductsNext, .latestNewsNext{
+.topProductsNext, .latestNewsNext, .relatedProductsNext{
    transform: translateX(-50px);
 }
 
@@ -381,7 +384,7 @@
 
 // Latest News Section
 
-.latest-news-section{
+.latest-news-section, .related-products-section {
    .underline-start{
        &::before{
          left: 50%;
@@ -578,5 +581,337 @@
 .wishlist-items-wrapper{
    .wishlist-item > *{
       border-bottom: 1px solid lightgray;
+   }
+}
+
+
+// Thumb SLider Products Details
+
+.product-gallery {
+   display: flex;
+   max-width: 900px;
+   margin: 0 auto;
+   height: 639px;
+   padding-inline: 0;
+}
+
+.swiper.mySwiper2 {
+   width: 130px;
+   height: 100%;
+}
+
+.swiper.mySwiper2 .swiper-wrapper {
+   flex-direction: column;
+}
+
+
+.swiper.mySwiper2 .active-thumb {
+   opacity: 1;
+   border: 2px solid rgb(218, 87, 87);
+}
+
+.swiper.mySwiper {
+   flex: 1;
+   height: 100%;
+   border-radius: 6px;
+   overflow: hidden;
+   background: #fff;
+}
+
+.product-thumb{
+   width: 117px !important;
+   height: 151px !important;
+   img{
+      min-width: 100%;
+      max-height: 150px;
+   }
+}
+
+.heart-box{
+   &:hover{
+      background-color: white;
+      transition: all .4s ease;
+   }
+}
+
+.active-btn{
+   background-color: $primary;
+}
+
+
+// Form Error
+
+.error{
+   color:red;
+   display:block;
+   margin-block:10px;
+   font-size:14px;
+}
+.checkbox-error{
+   display: block;
+   width: 100%;
+   margin-top: 8px;
+   margin-left: 0;
+}
+
+// Form 
+
+#reviewForm{
+   input, textarea{
+      &:focus, &:focus-visible{
+         outline: none;
+      }
+   }
+}
+
+.form-check-input {
+   &:checked{
+      border: none;
+      background-color: blue;
+   }
+   &:focus{
+      box-shadow: none;
+   }
+}
+
+.comment-box, 
+.name-box, 
+.email-box, 
+.website-box, 
+.loging-name-box, 
+.loging-email-box,
+.phone-box {
+   &::after{
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../assets/icons/pencil-fill.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+}
+.name-box{
+   &::after{
+      background-image: url("../assets/icons/person-fill.svg");
+   }
+}
+.email-box{
+   &::after{
+      background-image: url("../assets/icons/envelope-fill.svg");
+   }
+}
+.website-box{
+   &::after{
+      background-image: url("../assets/icons/globe.svg");
+   }
+}
+.phone-box{
+   &::after{
+      background-image: url("../assets/icons/telephone-fill.svg");
+   }
+}
+
+
+// CheckOut 
+
+#loginDropdown{
+   transition: 0.3s;
+}
+.loging-name-box{
+   &::after{
+      right: 25px;
+      top: 15px;
+      width: 15px;
+      height: 28px;
+      background-image: url("../assets/icons/person-fill.svg");
+   }
+}
+.loging-email-box{
+   &::after{
+      right: 25px;
+      top: 15px;
+      width: 16px;
+      height: 28px;
+      background-image: url("../assets/icons/envelope-fill.svg");
+   }
+}
+.loging-name-box, .loging-email-box, .login-password-box, .login-email-box{
+   input:focus-visible{
+    outline: $primary auto 1px;
+   }
+}
+.checkOutCouponBtn{
+   &:focus{
+      box-shadow: none;
+      background-color:  #f4f4f4;
+      border: 1px solid $primary !important;
+   }
+}
+
+// CheckOut Icons
+
+.fname-box,
+.lname-box,
+.email-box2,
+.phone-box,
+.company-box,
+.address-box{
+   &::after{
+      content:"";
+      position:absolute;
+      right:25px;
+      top:15px;
+      width:15px;
+      height:15px;
+      background-size:contain;
+      background-repeat:no-repeat;
+   }
+   input:focus-visible{
+    outline: $primary auto 1px;
+   }
+}
+.fname-box::after,
+.lname-box::after{
+   background-image:url("../assets/icons/person-fill.svg");
+}
+.email-box2::after{
+   background-image:url("../assets/icons/envelope-fill.svg");
+}
+.phone-box::after{
+   background-image:url("../assets/icons/telephone-fill.svg");
+}
+.company-box::after,
+.address-box::after{
+   background-image:url("../assets/icons/globe.svg");
+}
+
+
+// Select2 Custom Design
+   label {
+       display: block;
+       font-size: 20px;
+       font-weight: 600;
+       color: #222;
+       margin-bottom: 12px;
+   }
+   /* ── Main Select Box ── */
+   .select2-container--default .select2-selection--single {
+       height: 58px !important;
+       background: #fff !important;
+       border: 1px solid #e9e9e9 !important;
+       border-radius: 4px !important;
+       display: flex !important;
+       align-items: center !important;
+       padding-inline: 14px !important;
+       box-shadow: none !important;
+   }
+   /* ── Selected Text ── */
+   .select2-container--default .select2-selection--single .select2-selection__rendered {
+       line-height: normal !important;
+       font-size: 17px !important;
+       font-weight: 500 !important;
+       color: #111 !important;
+       padding-left: 0 !important;
+   }
+   /* placeholder text */
+   .select2-container--default .select2-selection--single .select2-selection__placeholder {
+       color: #888 !important;
+       font-weight: 400 !important;
+   }
+   /* ── Arrow ── */
+   .select2-container--default .select2-selection--single .select2-selection__arrow {
+       height: 100% !important;
+       right: 14px !important;
+       top: 0 !important;
+   }
+   .select2-container--default .select2-selection--single .select2-selection__arrow b {
+       border-color: #e94b8a transparent transparent transparent !important;
+       border-width: 7px 5px 0 5px !important;
+       margin-top: -3px !important;
+   }
+   .select2-container--default.select2-container--open
+       .select2-selection--single
+       .select2-selection__arrow b {
+       border-color: transparent transparent #e94b8a transparent !important;
+       border-width: 0 5px 7px 5px !important;
+   }
+   /* ── Dropdown Box ── */
+   .select2-dropdown {
+       border: 1px solid #e9e9e9 !important;
+       border-radius: 4px !important;
+       box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
+       overflow: hidden !important;
+       margin-top: 4px !important;
+   }
+   /* ── Remove Scroll ── */
+   .select2-results {
+       padding: 0 !important;
+   }
+   .select2-results__options {
+       max-height: none !important;
+       overflow: hidden !important;
+   }
+   /* ── Each Option ── */
+   .select2-results__option {
+       padding: 13px 16px !important;
+       font-size: 16px !important;
+       font-weight: 400 !important;
+       color: #333 !important;
+       background: #fff !important;
+   }
+   /* first option "Select Country" – grey header */
+   .select2-results__option:first-child {
+       background: #f7f7f7 !important;
+       color: #555 !important;
+       font-weight: 600 !important;
+       font-size: 15px !important;
+   }
+
+   /* ── Hide Search ── */
+   .select2-search {
+       display: none !important;
+   }
+   /* ── Focus / Open – no extra border color change ── */
+   .select2-container--default.select2-container--focus
+       .select2-selection--single,
+   .select2-container--default.select2-container--open
+       .select2-selection--single {
+       border-color: #e9e9e9 !important;
+       box-shadow: none !important;
+   }
+
+// Notes Icon
+.notes-box{
+   &::after{
+      content:"";
+      position:absolute;
+      right:20px;
+      top:20px;
+      width:16px;
+      height:16px;
+      background-image:url("../assets/icons/pencil-fill.svg");
+      background-size:contain;
+      background-repeat:no-repeat;
+   }
+}
+
+// Textarea Focus
+#orderNotes{
+   &:focus,
+   &:focus-visible{
+      box-shadow:none;
+   }
+}
+#createAccount{
+   &:focus{
+      outline: none;
+   }
+}
+.billingFormWrapper input, .billingFormWrapper textarea, .payment-feilds input{
+   &:focus-visible, &:focus{
+    outline: $primary auto 1px;
    }
 }

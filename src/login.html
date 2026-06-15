@@ -28,8 +28,6 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
@@ -286,225 +284,50 @@
     <main>
       <section class="breadcrumb-section bg-light-grey">
         <div class="container py-6 d-flex justify-content-start align-items-center flex-column">
-            <h1 class="fs-32 fw-bolder lh-sm">Checkout</h1>
+            <h1 class="fs-32 fw-bolder lh-sm">Account</h1>
             <nav aria-label="breadcrumb" class="">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item d-flex justify-content-center align-items-start"><a href="./index.html" class="text-decoration-none text-reset nav-link fs-14 fw-medium text-dark">Home</a></li>
-                <li class="breadcrumb-item active fs-14 fw-medium text-dark" aria-current="page">Checkout</li>
+                <li class="breadcrumb-item active fs-14 fw-medium text-dark" aria-current="page">Login</li>
             </ol>
             </nav>
         </div>
       </section>
-      <section class="billing-details">
-         <div class="container">
-          <div class="px-5 py-3 bg-light-grey mt-7 mb-0 w-100"><h2 class="display-4 fw-medium">Returning customer? <span  id="loginToggleBtn" role="button" class="text-primary">Click here to login</span></h2></div>
-          <div id="loginDropdown" class="mt-1 d-none">
-            <div class="border px-4 pt-4 pb-6">
-              <p class="mb-0 mt-3 fw-light mb-4">Please login your accont.</p>
-              <form action="#" id="loginForm" class="row" novalidate>
-                <div class="mb-4 loging-name-box position-relative col-12 col-md-6">
-                    <input minlength="3" required type="text" id="name" name="name" placeholder="Enter your name" class="w-100 bg-light-grey py-2 border-0 p-3 display-4 fw-light">
-                </div>
-                <div class="mb-4 loging-email-box position-relative col-12 col-md-6">
-                    <input required type="email" id="mail" name="email" placeholder="Enter email address" class="w-100 bg-light-grey py-2 border-0 p-3 display-4 fw-light">
-                </div>
-                <div class="mb-2 d-flex align-items-center gap-1 flex-wrap">
-                    <input type="submit" name="contactSubmit" value="SUBMIT"  class="proceed-btn btn rounded-0 checkout-btn fw-medium text-center px-6 py-2"></input>
-                    <div class="d-flex align-items-center">
-                      <input class="form-check-input d-inline-block" type="checkbox" value="" id="checkDefault" style="width: 15px; margin-right: 5px;">
-                      <label class="form-check-label ms-0 d-inline display-4 fw-normal text-nowrap mb-0" for="checkDefault">
-                         Remember me
-                      </label>
-                    </div>
-                  </div>
-              </form>
-              <p class="mb-0 mt-3 fw-normal nav-link">Lost your password?</p>
-            </div>
-          </div>
-          <div class="px-5 py-3 bg-light-grey mt-4 mb-1 w-100"><h2 class="display-4 fw-medium">Have a coupon? <span id="loginCouponToggleBtn" class="text-primary">Click here to enter your code</span></h2></div>
-         <div id="loginCouponDropdown" class="mt-1 d-none">
-          <div class="border px-4 pt-4 pb-6 mb-3">
-            <p class="mb-0 mt-3 fw-light mb-4">If you have a coupon code, please apply it below.</p>
-            <input type="email" class="checkOutCouponBtn form-control fs-13 text-black fw-normal rounded-0 border-0 bg-light-grey px-3 py-2" placeholder="Coupon Code" id="applyCouponLogin">
-            <div class="apply-coupon-btn btn rounded-0 bg-light-grey-800 px-6 py-2 mt-4 fw-medium text-uppercase" type="button">
-                Apply Coupon
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-      <section class="billing-details mt-6">
+      <section class="login-section">
         <div class="container">
-          <h2 class="display-2 fw-medium pb-1 w-50 mb-5 border-bottom d-inline-block">Billing Details</h2>
-          <form action="#" id="billingForm" novalidate class="">
-            <div class="p-5 border">
-              <div class="row billingFormWrapper">
-                <div class="mb-6 fname-box position-relative col-12 col-md-6">
-                    <input minlength="3"  required type="text"id="firstName" name="firstName" placeholder="First name" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light">
-                </div>
-                <div class="mb-6 lname-box position-relative col-12 col-md-6">
-                    <input minlength="3" required type="text" id="lastName" name="lastName" placeholder="Last name" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 email-box2 position-relative col-12 col-md-6">
-                    <input required type="email" id="billingMail" name="email" placeholder="email address" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 phone-box position-relative col-12 col-md-6">
-                    <input required type="text" id="billingPhone" name="phone" placeholder="phone number" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 company-box position-relative col-12 col-md-6">
-                    <input type="text" id="companyName" name="company" placeholder="Company name (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 address-box position-relative col-12 col-md-6">
-                    <input type="text" id="companyAddress" name="address" placeholder="Company address (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 col-12 col-md-6">
-                    <label class="display-4 fw-medium mb-3 d-block">
-                        Country
-                    </label>
-                    <div class="country-box position-relative" style="max-width: 300px;">
-                        <select id="billingCountry" required class="w-100 bg-white border p-3 display-4 fw-medium">
-                            <option value="">Select Country</option>
-                            <option value="india">Australia</option>
-                            <option value="usa">Canada</option>
-                            <option value="uk">China</option>
-                            <option value="canada">Morocco</option>
-                            <option value="australia">Saudi Arabia</option>
-                            <option value="germany">United Kingdom (UK)</option>
-                            <option value="france">United States (US)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="d-none d-md-block col-md-6"></div>
-                <div class="row">
-                  <label class="display-4 fw-medium mb-3 d-block">
-                        Address
-                    </label>
-                  <div class="mb-6 col-12 col-md-6">
-  
-                      <input type="text"id="streetAddress"placeholder="House number and street name"class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light">
-                  </div>
-                  <div class="mb-6 col-12 col-md-6">
-                      <input  type="text" id="apartmentAddress" placeholder="Apartment, suite, unit etc. (optional)" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                  </div>
-                </div>
-                <div class="mb-6 col-12 col-md-6 col-lg-4">
-                    <label class="display-4 fw-medium mb-3 d-block">
-                        Town / City
-                    </label>
-                    <input  type="text" id="cityName" placeholder="City" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 col-12 col-md-6 col-lg-4">
-                    <label class="display-4 fw-medium mb-3 d-block">
-                        State
-                    </label>
-                    <input  type="text" id="stateName" placeholder="State" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="mb-6 col-12 col-md-6 col-lg-4">
-                    <label class="display-4 fw-medium mb-3 d-block">
-                        Zip
-                    </label>
-                    <input  type="text" id="zipCode" placeholder="Zip" class="w-100 bg-light-grey py-1 border-0 p-3 display-4 fw-light" >
-                </div>
-                <div class="d-none d-md-block col-md-6 d-lg-none"></div>
-                <div class="mb-6 col-12">
-                    <input  class="form-check-input d-inline-block" type="checkbox" id="createAccount" style="width: 15px;" >
-                    <label  class="form-check-label ms-1 d-inline display-4 fw-normal" for="createAccount">
-                        Create an account?
-                    </label>
-                </div>
-                <div class="mb-6 col-12">
-                    <label class="display-4 fw-medium mb-3 d-block">
-                        Order Notes (optional)
-                    </label>
-                    <div class="position-relative notes-box">
-                        <textarea  rows="8" id="orderNotes" placeholder="Notes about your order, e.g. special notes for delivery." class="w-100 bg-light-grey border-0 p-3 display-4 fw-medium"></textarea>
-                    </div>
-                </div>
-              </div>
+         <div class="login-header d-flex flex-column align-items-center justify-content-center px-3 mt-7 mb-7">
+             <h2 class="text-center fw-semibold lh-sm mb-0">Sign In</h2>
+             <h3 class="text-center h2 fw-semibold lh-sm mb-2">To Your Account</h3>
+             <p class="text-center fs-14 fw-normal" style="margin-bottom: 6px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                 <p class="mb-0 text-center fs-14 fw-normal">Sit aliquid, Non distinctio vel iste.</p>
+         </div>
+         <div class="login-main row mt-7 mb-7">
+            <form action="#" id="loginFormMain" class="col-12 col-lg-6" novalidate>
+            <div class="mb-5 login-email-box position-relative">
+                <input required type="email" id="mMail" name="email" style="letter-spacing: 2px;" placeholder="Enter*" class="w-100 bg-light-grey py-2 border-0 p-3 fs-14 display-4 fw-light">
             </div>
-            <div class="row mt-6 pt-5 mb-6">
-              <div class="payment-method col-12 col-lg-6">
-                <div class="w-75 border-bottom mb-3">
-                  <h2 class="display-2 fw-medium">Payment Method</h2>
-                </div>
-                <div>
-                  <div class="form-check d-flex align-items-center px-4 justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                      <label class="form-check-label mb-0 ms-1" for="radioDefault2">  
-                          Credit & Debit cards
-                      </label>
-                    </div>
-                    <img src="./assets/icons/atm-card.webp" alt="" style="height: 40px; width: 40px;">
-                  </div>
-                </div>
-                <div class="payment-feilds shadow px-2 py-4 mt-2">
-                  <div class="d-flex flex-column align-items-start mt-3 mb-4">
-                    <label for="name" class="text-uppercase mb-1">Cardholder Name</label>
-                    <input minlength="3" required type="text" id="name" name="name" placeholder="Full name on card" class="w-100 rounded-0 py-1 px-1 border-0 bg-light-grey">
-                  </div>
-                  <div class="d-flex flex-column align-items-start mt-2 mb-4">
-                    <label for="cardNumber" class="form-label text-nowrap text-uppercase mb-1">Card Number</label>
-                      <input type="tel" class="form-control w-100 py-1 px-1 rounded-0 bg-light-grey" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" inputmode="numeric" autocomplete="cc-number" required>
-                  </div>
-                  <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row mb-2 gap-4" >
-                    <div class="mb-0 d-flex flex-wrap align-items-center gap-1">
-                      <label for="cardExpiry" class="form-label text-nowrap mb-0 me-2">Expiry Date</label>
-                      <div class="d-flex align-items-center gap-1">
-                        <input type="number" class="form-control py-1 px-1 bg-light-grey" id="cardExpiry" placeholder="MM" min="1" max="12" inputmode="numeric" autocomplete="cc-exp" style="width: 70px;" required>
-                        <input type="number" class="form-control py-1 px-1 bg-light-grey" id="cardExpiry" placeholder="YY" min="26" inputmode="numeric" autocomplete="cc-exp" style="width: 85px;" required>
-                      </div>
-                    </div>
-                    <div class="mb-0 d-flex align-items-center">
-                      <label for="cardCvv" class="form-label text-nowrap mb-0 me-2">CVV / CVC</label>
-                      <input type="password" class="form-control bg-light-grey" minlength="4" maxlength="4" id="cardCvv" placeholder=". . ." inputmode="numeric" autocomplete="cc-exp" style="width: 60px;" required>
-                    </div>
-                  </div>
-                </div>
-                <p class="text-black fw-light mt-5 mb-4">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
-                <div class="mb-2 mt-2">
-                  <input type="submit"value="PLACE ORDER"class="proceed-btn btn rounded-0 checkout-btn fw-medium text-center px-6 py-2">
-                </div>
-              </div>
-              <div class="cart-totals col-12 col-lg-6 mt-6 mt-lg-0">
-                <div class="d-flex align-items-end justify-content-md-end justify-content-center">
-                <div class="cart-summary">
-                  <div class="w-75 border-bottom mb-5">
-                    <h2 class="display-2 fw-medium mb-1">Cart Totals</h2>
-                  </div>
-                  <div class="d-flex flex-column bg-light-grey-500">
-                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
-                        <div class="fw-normal ps-1 py-1">Brake Conversion Kit <span class="fw-bold">x 2</span></div>
-                        <div class="fw-normal pe-6 py-1 ms-2">	$298.00</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center border-bottom">
-                        <div class="fw-normal ps-1 py-1">OE Replica Wheels <span class="fw-bold">x 2</span></div>
-                        <div class="fw-normal pe-6 py-1 ms-2">$170.00</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
-                        <div class="fw-normal ps-1 py-1">Wheel Bearing Retainer <span class="fw-bold">x 2</span></div>
-                        <div class="fw-normal pe-6 py-1 ms-2">$150.00</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center border-bottom">
-                        <div class="fw-normal ps-1 py-1">Shipping and Handing</div>
-                        <div class="fw-normal pe-6 py-1 ms-2">$15.00</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center border-bottom bg-light-grey">
-                        <div class="fw-normal ps-1 py-1">Vat</div>
-                        <div class="fw-normal pe-6 py-1 ms-2">$00.00</div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center border-bottom">
-                      <div class="fw-bold ps-1 py-1">Order Total</div>
-                      <div class="fw-bold pe-6 py-1 ms-2">$633.00</div>
-                      </div>
-                  </div>
-                </div>
+            <div class="mb-5 login-password-box position-relative">
+                <input required type="password" id="Mpassword" name="password" style="letter-spacing: 2px;" placeholder="Password*" class="w-100 bg-light-grey py-2 border-0 p-3 fs-14 display-4 fw-light">
             </div>
-           </div>
+            <div class="mb-4">
+                <input type="submit" name="contactSubmit" value="SIGN IN"  class="shop-now-btn btn btn-primary text-white rounded-0 fw-medium text-center px-5 py-2"></input>
             </div>
-          </form>
+            <div class="mb-2">
+                <h2 class="nav-link fs-14 fw-normal d-inline-block">FORGOTTEN YOUR PASSWORD?</h2>
+            </div>
+            </form>
+            <div class="col-12 col-lg-6">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 50px;">
+                    <h2 class="text-center display-2 fw-medium mb-2">DON'T HAVE AN ACCOUNT?</h2>
+                    <p class="text-center fw-light " style="margin-bottom: 6px;">Add items to your wishlistget personalised recommendations</p>
+                    <p class="text-center fw-light mb-4">check out more quickly track your orders register</p>
+                    <a href="#" class="fw-medium px-5 py-2 text-center shop-now-btn btn rounded-0 btn-primary text-white text-nowrap text-decoration-none" role="button">CREATE ACCOUNT</a>
+                </div>
+
+            </div>
+         </div>
         </div>
-      </section>
+      </section>      
       <section class="brand-partners-section bg-light-grey">
          <div class="container">
              <div class="brand-partners-wrapper d-flex justify-content-evenly justify-content-sm-between px-2 px-sm-0 py-4 py-lg-6">
@@ -602,16 +425,5 @@
       </div>
       </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-     <script>
-        $(document).ready(function () {
-            $('#billingCountry').select2({
-                placeholder: 'Select Country',
-                minimumResultsForSearch: Infinity,
-                width: '300px'
-            });
-        });
-    </script>
    </body>
 </html>
