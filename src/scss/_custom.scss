@@ -6,6 +6,10 @@
     color: #666666;
 }
 
+.bg-light-grey-600{
+   background-color: #F4F7FC;
+}
+
 .bg-light-grey-500 {
     background-color: rgb(244, 247, 252);
 }
@@ -114,6 +118,12 @@
    .nav-link {
    border-bottom: none;
 }
+}
+
+.badge-icon {
+   left: 125% !important;
+   height: 20px;
+   width: 20px;
 }
 
 .start-10{
@@ -661,8 +671,12 @@
       &:focus, &:focus-visible{
          outline: none;
       }
+      &::placeholder{
+         color: #000000;
+      }
    }
 }
+
 
 .form-check-input {
    &:checked{
@@ -913,5 +927,101 @@
 .billingFormWrapper input, .billingFormWrapper textarea, .payment-feilds input{
    &:focus-visible, &:focus{
     outline: $primary auto 1px;
+   }
+}
+
+
+// Cart Of OffCanvas
+.cart-offcanvas, .wishlist-offcanvas{
+  height: 100vh !important;
+  width: 400px;
+  background-color: white;
+  right: 0;
+  top: 0;
+  left: auto;
+  z-index: 11000;
+  transform: translateX(410px);
+}
+.hide-cart-offcanvas, .hide-wishlist-offcanvas{
+   transform: translateX(410px);
+   transition: all .4s ease;
+}
+.show-cart-offcanvas, .show-wishlist-offcanvas {
+   transform: translateX(0);
+   transition: all .4s ease;
+}
+
+.off-canvas-remove-btn-wishlist, .off-canvas-remove-btn-cart{
+   height: 24px;
+   width: 24px;
+}
+
+.delete-badge-cart, .delete-badge-wishlist{
+   left: 0;
+   top: 5%;
+}
+
+.cart-scroll-bar::-webkit-scrollbar, .wishlist-scroll-bar::-webkit-scrollbar{
+   width: 2px;
+   background-color: rgb(226, 225, 225);
+}
+
+.cart-scroll-bar::-webkit-scrollbar-thumb, .wishlist-scroll-bar::-webkit-scrollbar-thumb {
+  background: rgb(177, 177, 177); 
+  border-radius: 20px; 
+}
+
+// Backdrop
+.cart-overlay, .wishlist-overlay{
+  inset: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 10999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+.show-overlay-cart, .show-overlay-wishlist{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+// Cart Modal 
+
+.cart-modal-remove-btn{
+   @media (min-width:576px) {
+      position: absolute;
+      right: -3%;
+      top: -10%;
+      margin-top: 0px;
+   }
+}
+
+.custom-modal{
+   max-width: 500px !important; 
+   margin-inline: auto !important;
+    @media (min-width: 992px) {
+      max-width: 978px !important;
+    }
+
+}
+
+
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.7; 
+  --bs-backdrop-bg: #000000; 
+  z-index: 9999; 
+}
+
+// Quick View Modal
+
+.quickView-modal-remove-btn{
+   @media (min-width: 992px) {
+      position: absolute;
+      right: 0%;
+      top: -6%;
+      margin-top: 0px;
+      z-index: 10;
    }
 }

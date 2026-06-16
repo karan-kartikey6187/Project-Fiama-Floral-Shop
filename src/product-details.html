@@ -39,21 +39,140 @@
             <div class="container-fluid flex-column flex-sm-row">
               <a class="navbar-brand" href="#"><img src="./assets/logos/fiama-logo.webp" alt="Brand Logo"/></a>
               <div class="d-flex align-items-center order-lg-3 mt-3 mt-sm-0">
-                <div type="button" class="position-relative d-flex align-items-center me-3">
-                  <a href="./wishlist.html" class="stretched-link"><img src="./assets/icons/heart.svg" alt="Cart" class="icon-20px"/></a>
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">4</span>
+                <div type="button" class="wishlist-toggler-btn position-relative d-flex align-items-center me-4">
+                    <img src="./assets/icons/heart.svg" alt="Cart" class="icon-20px"/>
+                  <span class="position-absolute top-0 badge-icon translate-middle badge rounded-circle bg-primary d-flex justify-content-center align-items-center">4</span>
                 </div>
-                <div type="button" class="position-relative d-flex align-items-center">
-                  <a href="./cart.html" class="stretched-link"><img src="./assets/icons/cart.svg" alt="Cart" class="icon-20px"/></a>
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">2</span>
+                <div type="button" class="cart-toggler-btn position-relative d-flex align-items-center me-1">
+                    <img src="./assets/icons/cart.svg" alt="Cart" class="icon-20px"/>
+                  <span class="position-absolute top-0 badge-icon translate-middle badge rounded-circle bg-primary d-flex justify-content-center align-items-center">2</span>
                 </div>
-                <div class="d-flex flex-column ms-3 position-relative">
-                  <a href="./cart.html" class="mb-0 fs-13 fw-medium text-light-grey text-decoration-none stretched-link">YOUR CART</a>
+                <button class="cart-toggler-btn d-flex flex-column ms-2 position-relative border-0 bg-transparent align-items-start">
+                  <a href="javascript:void(0)" class="mb-0 fs-13 fw-medium text-light-grey text-decoration-none stretched-link text-nowrap">YOUR CART</a>
                   <p class="mb-0 fs-13 fw-medium text-primary" style="margin-top: 4px">$89.25</p>
-                </div>
+                </button>
                 <button class="navbar-toggler border-0 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                   <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="cart-overlay position-fixed"></div>
+                <div class="cart-offcanvas position-fixed border pt-3 pe-1 pb-3 ps-5">
+                  <div class="pe-2">
+                    <div class="d-flex justify-content-between align-items-center pb-5 mb-4 border-bottom mt-2">
+                      <h2 class="fw-medium display-4 text-uppercase mb-0">CART</h2>
+                      <button class="border-0 bg-transparent"><img src="./assets/icons/remove-x-icon.svg" alt="" class="off-canvas-remove-btn-cart"></button>
+                    </div>
+                    <div class="cart-scroll-bar overflow-y-auto overflow-x-visible mb-6" style="height: 350px;">
+                      <div class="cart-card-wrapper-offcanvas">
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-1.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Premium Joyful</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$65.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-2.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">The White Rose</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$85.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-3.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Red Rose Bouquet</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$92.00</p>
+                            </div>
+                          </div>
+                          <div class="cart-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 border-top">
+                            <span class="position-absolute delete-badge-cart badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-4.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                              <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Pink Flower Tree</p>
+                              <p class="mb-0 fs-14 fw-normal text-light-grey">1&nbsp;x&nbsp;$86.00</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                       <div class="d-flex py-2 justify-content-between border-top border-bottom">
+                        <p class="display-4 mb-0 fw-medium">Subtotal:</p>
+                        <p class="display-4 mb-0 fw-medium text-primary">$310.00</p>
+                       </div>
+                       <div class="pt-4 pb-3 d-flex justify-content-between">
+                         <a href="./cart.html" class="proceed-btn btn  rounded-0 checkout-btn fs-13 fw-medium text-center py-2 px-3">
+                           VIEW CART
+                         </a>
+                         <a href="./cart.html" class="apply-coupon-btn btn rounded-0 bg-light-grey-800 text-nowrap fs-13 px-3 py-2 fw-medium" type="button">
+                            CHECKOUT
+                        </a>
+                      </div>
+                      <p class="fs-14 fw-normal text-black mb-0">Free Shipping on All Orders Over $100!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishlist-overlay position-fixed"></div>
+                <div class="wishlist-offcanvas position-fixed border pt-3 pe-1 pb-3 ps-5">
+                  <div class="pe-2">
+                    <div class="d-flex justify-content-between align-items-center pb-5 mb-4 border-bottom mt-2">
+                      <h2 class="fw-medium display-4 text-uppercase mb-0">Wishlist</h2>
+                      <button class="border-0 bg-transparent"><img src="./assets/icons/remove-x-icon.svg" alt="" class="off-canvas-remove-btn-wishlist"></button>
+                    </div>
+                    <div class="wishlist-scroll-bar overflow-y-auto overflow-x-visible mb-6" style="height: 350px;">
+                      <div class="wishlist-card-wrapper-offcanvas">
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-6.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Assorted Roses</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$125.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-8.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Tropical Peace Lily</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$90.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 mb-3 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-5.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Heart's Desire</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$139.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                          <div class="wishlist-offcanvas-card d-flex gap-1 position-relative pt-3 ps-1 border-top">
+                            <span class="position-absolute delete-badge-wishlist badge rounded-pill bg-white shadow z-3 rounded rounded-circle d-flex justify-content-center align-items-center" style="height: 20px; width: 20px;"><img src="./assets/icons/delete.svg" alt=""></span>
+                            <img src="./assets/images/new-arrival-card-img-7.webp" alt="" style="width: 80px; height: 104px;">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 fs-14  fw-semibold text-light-grey nav-link">Roses Surprise</p>
+                                <p class="mb-0 fs-14 fw-normal text-light-grey">$110.00</p>
+                                <p class="mb-0 fs-14 fw-semibold text-black mt-6">In Stock</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div>
+                       <div class="pt-4 pb-3 d-flex justify-content-between border-top">
+                         <a href="./wishlist.html" class="proceed-btn btn  rounded-0 checkout-btn fs-13 fw-medium text-center py-2 px-3">
+                           VIEW WISHLIST
+                         </a>
+                         <a href="./cart.html" class="apply-coupon-btn btn rounded-0 bg-light-grey-800 text-nowrap fs-13 px-3 py-2 fw-medium" type="button">
+                            VIEW CART
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="offcanvas-wrapper offcanvas offcanvas-start px-3 " tabindex="-1" id="mobileMenu">
                 <div class="offcanvas-header px-0 mx-3 border-bottom mb-1 pb-4">
@@ -66,7 +185,7 @@
                       <img src="./assets/icons/telephone.svg" alt="Phone" class="icon-20px me-3"/>
                       <div>
                         <p class="mb-0 text-light-grey fs-13 fw-medium mb-4px">PHONE</p>
-                        <p class="mb-0"><a href="tel:0123456789" class="text-decoration-none text-black fs-13 fw-normal nav-link">+0123-456-789</a></p>
+                        <p class="mb-0"><a href="tel:0123456789" class="text-decoration-none text-black fs-13 fw-normal nav-link text-nowrap">+0123-456-789</a></p>
                       </div>
                     </div>
                     <div class="search-bar p-1 border border-1 d-none d-lg-flex d-flex align-items-center rounded rounded-5">
@@ -386,7 +505,7 @@
                 <div class="col-12 col-md-6 ps-5 mt-6 mt-md-0">
                     <h1 class="h3 fw-medium mb-2" style="font-size: 30px">Pink Flower Tree Red</h1>
                     <div class="d-flex gap-4 mb-5 flex-wrap">
-                      <p class="text-primary h4 fw-semibold mb-0 lh-sm" style="font-size: 24px;">$49.00&ensp;<del class="fw-semibold text-primary h5">$65.00</del></p>
+                      <p class="text-primary h4 fw-semibold mb-0 lh-sm" style="font-size: 24px;">$49.00&ensp;<del class="fw-semibold text-primary h5" style="opacity: 0.6;">$65.00</del></p>
                       <div class="d-flex align-items-center" style="gap: 3px;">
                           <img src="./assets/icons/star-yellowy.svg" alt="" class="icon-12px">
                           <img src="./assets/icons/star-yellowy.svg" alt="" class="icon-12px">
@@ -527,16 +646,16 @@
                 <div>
                   <form action="#" id="reviewForm" novalidate>
                     <div class="comment-box mb-6 position-relative">
-                        <textarea name="comment display-4 fw-light" id="comment" rows="7" placeholder="Type your comments...." class="w-100 bg-light-grey-500 p-3 border-0"></textarea>
+                        <textarea name="comment" id="comment" rows="7" placeholder="Type your comments...." class="w-100 bg-light-grey-600 p-3 border-0"></textarea>
                     </div>
                     <div class="mb-6 name-box position-relative">
-                        <input minlength="3" required type="text" id="name" name="name" placeholder="Type your name...." class="w-100 bg-light-grey-500 py-1 border-0 p-3 display-4 fw-light">
+                        <input minlength="3" required type="text" id="name" name="name" placeholder="Type your name...." class="w-100 bg-light-grey-600 py-2 border-0 p-3">
                     </div>
                     <div class="mb-6 email-box position-relative">
-                        <input required type="email" id="mail" name="email" placeholder="Type your email...." class="w-100 bg-light-grey-500 py-1 border-0 p-3 display-4 fw-light">
+                        <input required type="email" id="mail" name="email" placeholder="Type your email...." class="w-100 bg-light-grey-600 py-2 border-0 p-3">
                     </div>
                     <div class="website-box position-relative mb-6">
-                        <input required type="text" id="website" name="website" placeholder="Type your website...." class="w-100 bg-light-grey-500 py-1 border-0 p-3 display-4 fw-light">
+                        <input required type="text" id="website" name="website" placeholder="Type your website...." class="w-100 bg-light-grey-600 py-2 border-0 p-3">
                     </div>
                     <div class="mb-6">
                         <input class="form-check-input d-inline-block" type="checkbox" value="" id="checkDefault" style="width: 15px;">
@@ -818,6 +937,7 @@
       </div>
       </section>
     </footer>
+    <script type="module" src="./js/_custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
       var relatedProductsSwiper = new Swiper(".relatedProductsSwiper", {
