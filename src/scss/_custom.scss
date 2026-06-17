@@ -324,7 +324,15 @@
    }
 }
 
-.card:hover, .card:focus-within {
+// .card:hover, .card:focus-within {
+//    .card-image{
+//    .card-options {
+//       transform: translateY(0);
+//    }
+// }
+// }
+
+.card:hover {
    .card-image{
    .card-options {
       transform: translateY(0);
@@ -455,6 +463,11 @@
 .nav-logo{
    width: 120px;
    height: 31px;
+}
+
+.nav-shop-options-list::-webkit-scrollbar {
+   width: 3px;
+   background-color: #fbf8f8;
 }
 
 // Shop Page Breadcrumb Section
@@ -961,12 +974,12 @@
    top: 5%;
 }
 
-.cart-scroll-bar::-webkit-scrollbar, .wishlist-scroll-bar::-webkit-scrollbar{
+.cart-scroll-bar::-webkit-scrollbar, .wishlist-scroll-bar::-webkit-scrollbar {
    width: 2px;
    background-color: rgb(226, 225, 225);
 }
 
-.cart-scroll-bar::-webkit-scrollbar-thumb, .wishlist-scroll-bar::-webkit-scrollbar-thumb {
+.cart-scroll-bar::-webkit-scrollbar-thumb, .wishlist-scroll-bar::-webkit-scrollbar-thumb, .nav-shop-options-list::-webkit-scrollbar-thumb {
   background: rgb(177, 177, 177); 
   border-radius: 20px; 
 }
@@ -1023,5 +1036,29 @@
       top: -6%;
       margin-top: 0px;
       z-index: 10;
+   }
+}
+
+
+// My Account 
+
+.my-account-tabs-active{
+   background-color: #071c1f;
+   img{
+       filter: brightness(0) invert(1);
+   }
+   p {
+      color: white;
+   }
+}
+
+.my-account-tabs{
+      &:hover:not(.active-acount-tab){
+      img{
+        filter: brightness(0) saturate(100%) invert(45%) sepia(79%) saturate(276%) hue-rotate(298deg) brightness(89%) contrast(161%) !important;
+     }
+     p{
+      color: $primary;
+     }
    }
 }

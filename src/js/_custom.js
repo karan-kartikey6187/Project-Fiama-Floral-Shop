@@ -934,3 +934,39 @@ wishlistOverlay.addEventListener("click", () => {
     wishlistCanvas.classList.add("hide-wishlist-offcanvas");
     wishlistOverlay.classList.remove("show-overlay-wishlist");
 });
+
+
+
+
+// My Account Tab
+
+const tabButtons = document.querySelectorAll(".my-account-tab-btn");
+const tabContents = document.querySelectorAll(".my-account-tab");
+
+
+tabContents.forEach((tab, index) => {
+  if (index === 0) {
+    tab.classList.remove("d-none");
+  } else {
+    tab.classList.add("d-none");
+  }
+});
+
+tabButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+
+    tabButtons.forEach(btn => {
+      btn.classList.remove("my-account-tabs-active", "active-acount-tab");
+      btn.classList.add("my-account-tabs");
+    });
+
+    button.classList.add("my-account-tabs-active", "active-acount-tab");
+    button.classList.remove("my-account-tabs");
+
+    tabContents.forEach(tab => {
+      tab.classList.add("d-none");
+    });
+
+    tabContents[index].classList.remove("d-none");
+  });
+});
