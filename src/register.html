@@ -28,6 +28,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />  
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
@@ -472,26 +473,15 @@
       </section>      
       <section class="brand-partners-section bg-light-grey">
          <div class="container">
-             <div class="brand-partners-wrapper d-flex justify-content-evenly justify-content-sm-between px-2 px-sm-0 py-4 py-lg-6">
-             <div class="brand-partner-img mx-5">
-                 <img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid">
-             </div>
-             <div class="brand-partner-img mx-6">
-                 <img src="./assets/images/brand-partners-img-2.webp" alt="" class="img-fluid">
-             </div>
-             <div class="brand-partner-img d-none d-sm-block">
-                 <img src="./assets/images/brand-partners-img-3.webp" alt="" class="img-fluid">
-             </div>
-             <div class="brand-partner-img d-none d-md-block">
-                 <img src="./assets/images/brand-partners-img-4.webp" alt="" class="img-fluid">
-             </div>
-             <div class="brand-partner-img mx-6 d-none d-lg-block">
-                 <img src="./assets/images/brand-partners-img-5.webp" alt="" class="img-fluid">
-             </div>
-             <div class="brand-partner-img mx-5 d-none d-xl-block">
-                 <img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid">
-             </div>
-             </div>
+            <div class="swiper footerSwiper">
+              <div class="swiper-wrapper px-2 px-sm-0 py-4 py-lg-6">
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-2.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-3.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-4.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-5.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+                  <div class="swiper-slide d-flex justify-content-center align-content-center"><img src="./assets/images/brand-partners-img-1.webp" alt="" class="img-fluid" style="height: 80px;"></div>
+              </div>
          </div>
       </section>
     </main>
@@ -568,5 +558,32 @@
       </section>
     </footer>
     <script type="module" src="./js/_custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var footerSwiper = new Swiper(".footerSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        allowTouchMove: true, 
+        loop: true,
+        breakpoints: {
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 25,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 30,
+        },
+      }
+      });
+    </script>
    </body>
 </html>

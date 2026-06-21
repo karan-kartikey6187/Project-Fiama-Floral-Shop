@@ -614,8 +614,11 @@
    display: flex;
    max-width: 900px;
    margin: 0 auto;
-   height: 639px;
+   height: 480px;
    padding-inline: 0;
+   @media (min-width: 768px){
+      height: 689px;
+   }
 }
 
 .swiper.mySwiper2 {
